@@ -42,5 +42,14 @@
   <script src="scripts/main.js"></script>
 
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script type="text/javascript">
+  const userAction = async () => {
+	  const response = await fetch('http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=430156241533f1d058c603178cc3ca0e&movieCd=20171203');
+	  const myJson = await response.json(); //extract JSON from the http response
+	  // do something with myJson
+	  debugger;
+	}  
+  userAction();  
+  </script>
 </body>
 </html>
